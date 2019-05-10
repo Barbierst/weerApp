@@ -46,7 +46,7 @@ window.addEventListener('load', ()=> {
             })
         });
     } else {
-        document.querySelector('.timezone-name').textContent = 'Om het weer te bekijken hebben moet je geolocatie aan staan!';
+        document.querySelector('.timezone-name').textContent = 'Om het weer te bekijken, moet je geolocatie aan staan!';
     }
 
     function setIcons(icon, iconID) {

@@ -1,5 +1,5 @@
 # weerApp
-Een App die het huidige weer op de locatie van de gebruiker ophaalt vanuit de Dark Sky API en weergeeft.
+Een App die het huidige weer en het weer van morgen op de locatie van de gebruiker ophaalt vanuit de Dark Sky API en weergeeft.
 
 # Wat heb ik geleerd
  - Hoe maak je een API call

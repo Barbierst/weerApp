@@ -6,5 +6,4 @@ Een App die het huidige weer op de locatie van de gebruiker ophaalt vanuit de Da
  - Werken met een API prototype
  - Werken met een proxy
  - DOM  manipulatie
- - Werken met een <canvas>
  - Arrow functies

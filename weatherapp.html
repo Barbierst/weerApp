@@ -4,22 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>TRGT | WeatherApp</title>
+    <title>TRGT | weatherApp</title>
     <link rel="stylesheet" href="weatherapp.css">
 </head>
 <body>
-   <div class="timezone">
-       <h1 class="timezone-name"> Timezone </h1>
-       <canvas class="icon" width="128" height="128"></canvas>
-   </div> 
-   <div class="temperature">
-        <div class="degree-section">
-            <h2 class="temperature-degree">34</h2>
-            <span>F</span>
-        </div>
-        <div class="temperature-description">it's cold</div>
-        
+    <div class="content">
+        <div class="today">
+            <h2 class="today">Nu</h2>
+            <div class="timezone">
+                <h1 class="timezone-name"> App werkt doormiddel van geolocatie </h1>
+                <canvas class="icon" width="128" height="128"></canvas>
+            </div> 
+            <div class="temperature">
+                <div class="degree-section">
+                    <h2 class="temperature-degree">34</h2>
+                    <span>F</span>
+                </div>
+                <div class="temperature-description"></div>
+            </div> 
+        </div>  
+        <div class="tomorrow">
+            <h2 class="tomorrow">Morgen</h2>
+                <div class="timezone-tomorrow">
+                    <h1 class="timezone-name-tomorrow"> App werkt doormiddel van geolocatie </h1>
+                    <canvas class="icon-tomorrow" width="128" height="128"></canvas>
+                </div> 
+                <div class="temperature-tomorrow">
+                    <div class="degree-section-tomorrow">
+                        <h2 class="temperature-degree-tomorrow">34</h2>
+                        <span>F</span>
+                    </div>
+                    <div class="temperature-description-tomorrow"></div>
+                </div> 
+        </div> 
    </div>
+   <p><a href="https://darksky.net/poweredby/">Powered with the Dark Sky API</a></p>
    <script src="skycons.js"></script> 
    <script src="weatherapp.js"></script>
     

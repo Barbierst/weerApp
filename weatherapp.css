@@ -10,35 +10,110 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: green;
     font-family: sans-serif;
-    color: white;
+    color: black;
+
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background: gray;
+    padding: 3vh;
+    -webkit-border-radius: 50px;
+    -webkit-border-top-left-radius: 1px;
+    -webkit-border-bottom-right-radius: 1px;
+    -moz-border-radius: 50px;
+    -moz-border-radius-topleft: 1px;
+    -moz-border-radius-bottomright: 1px;
+    border-radius: 50px;
+    border-top-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    background-image: url('img/Background.png');
+    background-repeat: no-repeat; 
+    background-size: cover;
+    border: 1px green solid;
 }
 
 .timezone,
-.temperature{
+.timezone-tomorrow,
+.temperature,
+.temperature-tomorrow{
     height: 30vh;
-    width: 50%;
+    width: 30vw;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
+
+    
+    
 }
 
-.temperature{
-    flex-direction: column;
+.temperature,
+.temperature-tomorrow{
+    flex-direction: column-reverse;
 }
 
-.degree-section{
+.degree-section,
+.degree-section-tomorrow{
     display: flex;
     align-items: center;
     cursor: pointer;
+    padding: 5px;
+    background: white;
 }
 
-.degree-section span{
+.degree-section span,
+.degree-section-tomorrow span,
+.temperature-description,
+.temperature-description-tomorrow{
     margin: 15px;
     font-size: 1.5em;
 }
 
-.degree-section h2{
-    font-size: 2em;
+.temperature-description,
+.temperature-description-tomorrow {
+    background: white;
+    padding: 5px;
 }
+
+canvas {
+    background: black;
+    padding: 2vh;
+    -webkit-border-radius: 50px;
+    -webkit-border-top-left-radius: 1px;
+    -webkit-border-bottom-right-radius: 1px;
+    -moz-border-radius: 50px;
+    -moz-border-radius-topleft: 1px;
+    -moz-border-radius-bottomright: 1px;
+    border-radius: 50px;
+    border-top-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+}
+
+p{
+    margin-top: 30px;
+    font-size: 0.8em;
+}
+
+@media only screen and (max-width: 1100px) {
+    body {
+        height: auto;
+    }
+    
+    .content {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .timezone,
+    .timezone-tomorrow,
+    .temperature,
+    .temperature-tomorrow{
+        width: 60vw;
+}
+}
+
+

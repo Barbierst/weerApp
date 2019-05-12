@@ -106,13 +106,14 @@ p{
     .content {
         flex-direction: column;
         height: auto;
+        width: 95vw;
     }
 
     .timezone,
     .timezone-tomorrow,
     .temperature,
     .temperature-tomorrow{
-        width: 60vw;
+        width: 80vw;
 }
 }
 

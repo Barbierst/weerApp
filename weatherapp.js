@@ -28,16 +28,17 @@ window.addEventListener('load', ()=> {
                 .then(data => {
                     console.log(data);
                 const { temperature, summary, icon } = data.currently;
+                let celsius = (temperature - 32) * (5/9);
         
                 //DOM elements veranderen in inhoud van de API
 
-                temperatureDegree.textContent = temperature;
+                temperatureDegree.textContent = Math.floor(celsius);
                 temperatureDescription.textContent = summary;
                 locationTimezone.textContent = data.timezone;
                 locationTimezoneTomorrow.textContent = data.timezone;
 
                     //Formule voor Celsius
-                    let celsius = (temperature - 32) * (5/9);
+            
 
                     //set icon
                     setIcons(icon, document.querySelector('.icon'));
@@ -62,11 +63,11 @@ window.addEventListener('load', ()=> {
 
                 const { apparentTemperatureHigh, summary, icon } = data.daily.data["1"];
 
-                temperatureDegreeTomorrow.textContent = apparentTemperatureHigh;
-                temperatureDescriptionTomorrow.textContent = summary;
+                let celsius = (apparentTemperatureHigh - 32) * (5/9);
 
-                    //Formule voor Celsius
-                    let celsius = (apparentTemperatureHigh - 32) * (5/9);
+                temperatureDegreeTomorrow.textContent = Math.floor(celsius);
+                temperatureDescriptionTomorrow.textContent = summary;
+    
 
                     //set icon
                     setIcons(icon, document.querySelector('.icon-tomorrow'));
